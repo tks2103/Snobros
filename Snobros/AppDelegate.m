@@ -12,12 +12,41 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    EAGLContext *context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
+    [EAGLContext setCurrentContext:context];
+    
+    glEnable(GL_DEPTH_TEST);
+    
+    GLKView *view = [[GLKView alloc] initWithFrame:[[UIScreen mainScreen] bounds] context:context];
+    view.delegate = self;
+    view.context = context;
+    
+    SBViewController *controller = [[SBViewController alloc] init];
+    controller.delegate = self;
+    controller.view = view;
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = controller;
     [self.window makeKeyAndVisible];
+    
+    glClearColor(0.7, 0.7, 0.4, 0.4);
+    
+    map = [[SBMap alloc] initWithFile:@"snobrosmap.png"];
+    
     return YES;
 }
+
+- (void)glkViewControllerUpdate:(GLKViewController *)controller
+{
+    //glClearColor(arc4random()%10/10.0, arc4random()%10/10.0, arc4random()%10/10.0, 1);
+}
+
+- (void)glkView:(GLKView *)view drawInRect:(CGRect)rect
+{
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    [map render];
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
