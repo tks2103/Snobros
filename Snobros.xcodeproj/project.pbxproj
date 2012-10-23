@@ -1,0 +1,283 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		87F8F7D81636FB9B007D4BC0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F8F7D71636FB9B007D4BC0 /* UIKit.framework */; };
+		87F8F7DA1636FB9B007D4BC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F8F7D91636FB9B007D4BC0 /* Foundation.framework */; };
+		87F8F7DC1636FB9B007D4BC0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F8F7DB1636FB9B007D4BC0 /* CoreGraphics.framework */; };
+		87F8F7E21636FB9B007D4BC0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 87F8F7E01636FB9B007D4BC0 /* InfoPlist.strings */; };
+		87F8F7E41636FB9B007D4BC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F8F7E31636FB9B007D4BC0 /* main.m */; };
+		87F8F7E81636FB9B007D4BC0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F8F7E71636FB9B007D4BC0 /* AppDelegate.m */; };
+		87F8F7EA1636FB9B007D4BC0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 87F8F7E91636FB9B007D4BC0 /* Default.png */; };
+		87F8F7EC1636FB9B007D4BC0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 87F8F7EB1636FB9B007D4BC0 /* Default@2x.png */; };
+		87F8F7EE1636FB9B007D4BC0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 87F8F7ED1636FB9B007D4BC0 /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		87F8F7D31636FB9B007D4BC0 /* Snobros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snobros.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87F8F7D71636FB9B007D4BC0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		87F8F7D91636FB9B007D4BC0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		87F8F7DB1636FB9B007D4BC0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		87F8F7DF1636FB9B007D4BC0 /* Snobros-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Snobros-Info.plist"; sourceTree = "<group>"; };
+		87F8F7E11636FB9B007D4BC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		87F8F7E31636FB9B007D4BC0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		87F8F7E51636FB9B007D4BC0 /* Snobros-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Snobros-Prefix.pch"; sourceTree = "<group>"; };
+		87F8F7E61636FB9B007D4BC0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		87F8F7E71636FB9B007D4BC0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		87F8F7E91636FB9B007D4BC0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		87F8F7EB1636FB9B007D4BC0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		87F8F7ED1636FB9B007D4BC0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87F8F7D01636FB9B007D4BC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87F8F7D81636FB9B007D4BC0 /* UIKit.framework in Frameworks */,
+				87F8F7DA1636FB9B007D4BC0 /* Foundation.framework in Frameworks */,
+				87F8F7DC1636FB9B007D4BC0 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		87F8F7C81636FB9B007D4BC0 = {
+			isa = PBXGroup;
+			children = (
+				87F8F7DD1636FB9B007D4BC0 /* Snobros */,
+				87F8F7D61636FB9B007D4BC0 /* Frameworks */,
+				87F8F7D41636FB9B007D4BC0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		87F8F7D41636FB9B007D4BC0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87F8F7D31636FB9B007D4BC0 /* Snobros.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87F8F7D61636FB9B007D4BC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87F8F7D71636FB9B007D4BC0 /* UIKit.framework */,
+				87F8F7D91636FB9B007D4BC0 /* Foundation.framework */,
+				87F8F7DB1636FB9B007D4BC0 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		87F8F7DD1636FB9B007D4BC0 /* Snobros */ = {
+			isa = PBXGroup;
+			children = (
+				87F8F7E61636FB9B007D4BC0 /* AppDelegate.h */,
+				87F8F7E71636FB9B007D4BC0 /* AppDelegate.m */,
+				87F8F7DE1636FB9B007D4BC0 /* Supporting Files */,
+			);
+			path = Snobros;
+			sourceTree = "<group>";
+		};
+		87F8F7DE1636FB9B007D4BC0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				87F8F7DF1636FB9B007D4BC0 /* Snobros-Info.plist */,
+				87F8F7E01636FB9B007D4BC0 /* InfoPlist.strings */,
+				87F8F7E31636FB9B007D4BC0 /* main.m */,
+				87F8F7E51636FB9B007D4BC0 /* Snobros-Prefix.pch */,
+				87F8F7E91636FB9B007D4BC0 /* Default.png */,
+				87F8F7EB1636FB9B007D4BC0 /* Default@2x.png */,
+				87F8F7ED1636FB9B007D4BC0 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87F8F7D21636FB9B007D4BC0 /* Snobros */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87F8F7F11636FB9B007D4BC0 /* Build configuration list for PBXNativeTarget "Snobros" */;
+			buildPhases = (
+				87F8F7CF1636FB9B007D4BC0 /* Sources */,
+				87F8F7D01636FB9B007D4BC0 /* Frameworks */,
+				87F8F7D11636FB9B007D4BC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Snobros;
+			productName = Snobros;
+			productReference = 87F8F7D31636FB9B007D4BC0 /* Snobros.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87F8F7CA1636FB9B007D4BC0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Tanoy Sinha";
+			};
+			buildConfigurationList = 87F8F7CD1636FB9B007D4BC0 /* Build configuration list for PBXProject "Snobros" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 87F8F7C81636FB9B007D4BC0;
+			productRefGroup = 87F8F7D41636FB9B007D4BC0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87F8F7D21636FB9B007D4BC0 /* Snobros */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87F8F7D11636FB9B007D4BC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87F8F7E21636FB9B007D4BC0 /* InfoPlist.strings in Resources */,
+				87F8F7EA1636FB9B007D4BC0 /* Default.png in Resources */,
+				87F8F7EC1636FB9B007D4BC0 /* Default@2x.png in Resources */,
+				87F8F7EE1636FB9B007D4BC0 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87F8F7CF1636FB9B007D4BC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87F8F7E41636FB9B007D4BC0 /* main.m in Sources */,
+				87F8F7E81636FB9B007D4BC0 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		87F8F7E01636FB9B007D4BC0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87F8F7E11636FB9B007D4BC0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		87F8F7EF1636FB9B007D4BC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		87F8F7F01636FB9B007D4BC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87F8F7F21636FB9B007D4BC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Snobros/Snobros-Prefix.pch";
+				INFOPLIST_FILE = "Snobros/Snobros-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		87F8F7F31636FB9B007D4BC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Snobros/Snobros-Prefix.pch";
+				INFOPLIST_FILE = "Snobros/Snobros-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87F8F7CD1636FB9B007D4BC0 /* Build configuration list for PBXProject "Snobros" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87F8F7EF1636FB9B007D4BC0 /* Debug */,
+				87F8F7F01636FB9B007D4BC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87F8F7F11636FB9B007D4BC0 /* Build configuration list for PBXNativeTarget "Snobros" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87F8F7F21636FB9B007D4BC0 /* Debug */,
+				87F8F7F31636FB9B007D4BC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 87F8F7CA1636FB9B007D4BC0 /* Project object */;
+}
