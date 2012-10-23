@@ -14,6 +14,7 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate, GLKViewControllerDelegate, GLKViewDelegate> {
     SBEntity *map;
     SBEntity *bro;
+    int fps;
 }
 
 @property (strong, nonatomic) UIWindow *window;

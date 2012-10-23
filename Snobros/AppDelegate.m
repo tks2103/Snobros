@@ -25,6 +25,8 @@
     controller.delegate = self;
     controller.view = view;
     
+    fps = controller.preferredFramesPerSecond;
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = controller;
     [self.window makeKeyAndVisible];
