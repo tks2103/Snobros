@@ -14,21 +14,17 @@
 @interface SBSprite : NSObject <SBRenderable, SBMovable> {
     GLKVector2      *positionCoords;
     GLKVector2      *textureCoords;
-    UIImage         *image;
     GLKBaseEffect   *effect;
     GLKTextureInfo  *texture;
-    CGPoint         position;
-    CGSize          size;
 }
 
 @property (readonly) GLKVector2 *positionCoords;
 @property (readonly) GLKVector2 *textureCoords;
 
--(id) initWithFile:(NSString *)filePath andPosition:(CGPoint)pos andSize:(CGSize)s;
+-(id) initWithFile:(NSString *)filePath andPosition:(CGPoint)p andSize:(CGSize)s;
 
--(void) precalculateCoords;
--(void) precalculatePosition;
--(void) precalculateTexture;
--(void) updatePosition:(CGPoint)pos;
+-(void) moveTo:(CGPoint)p withSize:(CGSize)s;
+-(void) calculatePosition:(CGPoint)p withSize:(CGSize)s;
+-(void) calculateTexture;
 
 @end

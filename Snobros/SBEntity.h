@@ -10,7 +10,7 @@
 #import "SBRenderable.h"
 #import "SBSprite.h"
 
-@interface SBEntity : NSObject<SBRenderable> {
+@interface SBEntity : NSObject <SBRenderable> {
     CGPoint  position;
     CGSize   size;
     SBSprite *sprite;
