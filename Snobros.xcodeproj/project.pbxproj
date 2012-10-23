@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		878CC9D4163709970030F41A /* SBRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 878CC9D3163709970030F41A /* SBRectangle.m */; };
+		878CC9D4163709970030F41A /* SBSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 878CC9D3163709970030F41A /* SBSprite.m */; };
 		87C32D45163714C1007E6579 /* snobrosmap.png in Resources */ = {isa = PBXBuildFile; fileRef = 87C32D44163714C1007E6579 /* snobrosmap.png */; };
 		87C32D50163723F5007E6579 /* SBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C32D4F163723F5007E6579 /* SBViewController.m */; };
+		87C32D5C16372B14007E6579 /* SBEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C32D5B16372B14007E6579 /* SBEntity.m */; };
+		87C32D6816373D59007E6579 /* snobro.png in Resources */ = {isa = PBXBuildFile; fileRef = 87C32D6716373D59007E6579 /* snobro.png */; };
 		87E39F3E1636FCFE003438CF /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E39F3D1636FCFE003438CF /* OpenGLES.framework */; };
 		87E39F401636FD04003438CF /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E39F3F1636FD04003438CF /* GLKit.framework */; };
 		87E39F421636FD21003438CF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E39F411636FD21003438CF /* QuartzCore.framework */; };
-		87E39F49163706BF003438CF /* SBMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E39F48163706BF003438CF /* SBMap.m */; };
 		87F8F7D81636FB9B007D4BC0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F8F7D71636FB9B007D4BC0 /* UIKit.framework */; };
 		87F8F7DA1636FB9B007D4BC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F8F7D91636FB9B007D4BC0 /* Foundation.framework */; };
 		87F8F7DC1636FB9B007D4BC0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F8F7DB1636FB9B007D4BC0 /* CoreGraphics.framework */; };
@@ -26,16 +27,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		878CC9D2163709970030F41A /* SBRectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBRectangle.h; sourceTree = "<group>"; };
-		878CC9D3163709970030F41A /* SBRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBRectangle.m; sourceTree = "<group>"; };
+		878CC9D2163709970030F41A /* SBSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSprite.h; sourceTree = "<group>"; };
+		878CC9D3163709970030F41A /* SBSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSprite.m; sourceTree = "<group>"; };
 		87C32D44163714C1007E6579 /* snobrosmap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snobrosmap.png; sourceTree = "<group>"; };
 		87C32D4E163723F5007E6579 /* SBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBViewController.h; sourceTree = "<group>"; };
 		87C32D4F163723F5007E6579 /* SBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBViewController.m; sourceTree = "<group>"; };
+		87C32D5A16372B14007E6579 /* SBEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBEntity.h; sourceTree = "<group>"; };
+		87C32D5B16372B14007E6579 /* SBEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBEntity.m; sourceTree = "<group>"; };
+		87C32D66163736B0007E6579 /* SBMovable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBMovable.h; sourceTree = "<group>"; };
+		87C32D6716373D59007E6579 /* snobro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snobro.png; sourceTree = "<group>"; };
 		87E39F3D1636FCFE003438CF /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		87E39F3F1636FD04003438CF /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		87E39F411636FD21003438CF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		87E39F47163706BF003438CF /* SBMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBMap.h; sourceTree = "<group>"; };
-		87E39F48163706BF003438CF /* SBMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBMap.m; sourceTree = "<group>"; };
 		87E39F4A1637077C003438CF /* SBRenderable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBRenderable.h; sourceTree = "<group>"; };
 		87F8F7D31636FB9B007D4BC0 /* Snobros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snobros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F8F7D71636FB9B007D4BC0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -72,6 +75,7 @@
 		87C32D42163714B6007E6579 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				87C32D6716373D59007E6579 /* snobro.png */,
 				87C32D44163714C1007E6579 /* snobrosmap.png */,
 			);
 			name = Assets;
@@ -116,10 +120,11 @@
 				87C32D4E163723F5007E6579 /* SBViewController.h */,
 				87C32D4F163723F5007E6579 /* SBViewController.m */,
 				87E39F4A1637077C003438CF /* SBRenderable.h */,
-				87E39F47163706BF003438CF /* SBMap.h */,
-				87E39F48163706BF003438CF /* SBMap.m */,
-				878CC9D2163709970030F41A /* SBRectangle.h */,
-				878CC9D3163709970030F41A /* SBRectangle.m */,
+				87C32D66163736B0007E6579 /* SBMovable.h */,
+				87C32D5A16372B14007E6579 /* SBEntity.h */,
+				87C32D5B16372B14007E6579 /* SBEntity.m */,
+				878CC9D2163709970030F41A /* SBSprite.h */,
+				878CC9D3163709970030F41A /* SBSprite.m */,
 				87F8F7DE1636FB9B007D4BC0 /* Supporting Files */,
 			);
 			path = Snobros;
@@ -195,6 +200,7 @@
 				87F8F7EC1636FB9B007D4BC0 /* Default@2x.png in Resources */,
 				87F8F7EE1636FB9B007D4BC0 /* Default-568h@2x.png in Resources */,
 				87C32D45163714C1007E6579 /* snobrosmap.png in Resources */,
+				87C32D6816373D59007E6579 /* snobro.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,9 +213,9 @@
 			files = (
 				87F8F7E41636FB9B007D4BC0 /* main.m in Sources */,
 				87F8F7E81636FB9B007D4BC0 /* AppDelegate.m in Sources */,
-				87E39F49163706BF003438CF /* SBMap.m in Sources */,
-				878CC9D4163709970030F41A /* SBRectangle.m in Sources */,
+				878CC9D4163709970030F41A /* SBSprite.m in Sources */,
 				87C32D50163723F5007E6579 /* SBViewController.m in Sources */,
+				87C32D5C16372B14007E6579 /* SBEntity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +255,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -271,7 +277,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

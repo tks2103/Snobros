@@ -31,7 +31,8 @@
     
     glClearColor(0.7, 0.7, 0.4, 0.4);
     
-    map = [[SBMap alloc] initWithFile:@"snobrosmap.png"];
+    map = [[SBEntity alloc] initWithFile:@"snobrosmap.png" andPosition:CGPointMake(0, 0) andSize:CGSizeMake(480, 320)];
+    bro = [[SBEntity alloc] initWithFile:@"snobro.png"  andPosition:CGPointMake(0, 0) andSize:CGSizeMake(30, 42)];
     
     return YES;
 }
@@ -45,6 +46,7 @@
 {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     [map render];
+    [bro render];
 }
 
 
