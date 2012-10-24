@@ -13,7 +13,7 @@
 @synthesize positionCoords, textureCoords;
 
 
--(id) initWithFile:(NSString *)filePath andPosition:(CGPoint)p andSize:(CGSize)s {
+-(id) initWithFile:(NSString *)filePath andPosition:(GLKVector2)p andSize:(CGSize)s {
     self = [super init];
     if (self) {
         texture  = [GLKTextureLoader textureWithCGImage:[UIImage imageNamed:filePath].CGImage options:nil error:nil];
@@ -31,13 +31,13 @@
     free(textureCoords);
 }
 
--(void) moveTo:(CGPoint)p withSize:(CGSize)s {
+-(void) moveTo:(GLKVector2)p withSize:(CGSize)s {
     [self calculatePosition:p withSize:s];
     [self calculateTexture];
 }
 
 
--(void) calculatePosition:(CGPoint)p withSize:(CGSize)s {
+-(void) calculatePosition:(GLKVector2)p withSize:(CGSize)s {
     positionCoords[0] = GLKVector2Make(p.x + s.width/2, p.y - s.height/2);
     positionCoords[1] = GLKVector2Make(p.x + s.width/2, p.y + s.height/2);
     positionCoords[2] = GLKVector2Make(p.x - s.width/2, p.y + s.height/2);

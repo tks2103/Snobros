@@ -34,11 +34,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Snobros/AppDelegate.m"
-         timestampString = "372724094.604244"
+         timestampString = "372784084.476919"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "38"
-         endingLineNumber = "38"
+         startingLineNumber = "36"
+         endingLineNumber = "36"
          landmarkName = "-applicationWillEnterForeground:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -47,7 +47,20 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Snobros/AppDelegate.m"
-         timestampString = "372724078.254061"
+         timestampString = "372784084.476919"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "30"
+         endingLineNumber = "30"
+         landmarkName = "-application:didFinishLaunchingWithOptions:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Snobros/AppDelegate.m"
+         timestampString = "372784084.476919"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "32"
@@ -60,12 +73,38 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Snobros/AppDelegate.m"
-         timestampString = "372724080.911568"
+         timestampString = "372784084.476919"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "34"
-         endingLineNumber = "34"
-         landmarkName = "-application:didFinishLaunchingWithOptions:"
+         startingLineNumber = "46"
+         endingLineNumber = "46"
+         landmarkName = "-glkViewControllerUpdate:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Snobros/SBEntity.m"
+         timestampString = "372785133.91523"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "36"
+         endingLineNumber = "36"
+         landmarkName = "-walkWithHeading:withElapsedTime:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Snobros/AppDelegate.m"
+         timestampString = "372785199.148449"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "43"
+         endingLineNumber = "43"
+         landmarkName = "-glkViewControllerUpdate:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

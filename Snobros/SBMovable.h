@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <GLKit/GLKit.h>
 
 @protocol SBMovable <NSObject>
--(void) updatePosition:(CGPoint)position;
+-(void) moveTo:(GLKVector2)p;
+-(void) walkWithHeading:(GLKVector2)h withElapsedTime:(NSTimeInterval)e;
 @end

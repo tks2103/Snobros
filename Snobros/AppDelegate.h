@@ -12,9 +12,9 @@
 #import "SBEntity.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, GLKViewControllerDelegate, GLKViewDelegate> {
-    SBEntity *map;
-    SBEntity *bro;
-    int fps;
+    SBEntity    *map;
+    SBEntity    *bro;
+    NSDate      *lastUpdate;
 }
 
 @property (strong, nonatomic) UIWindow *window;

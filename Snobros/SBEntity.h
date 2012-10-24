@@ -8,15 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "SBRenderable.h"
+#import "SBMovable.h"
 #import "SBSprite.h"
 
-@interface SBEntity : NSObject <SBRenderable> {
-    CGPoint  position;
-    CGSize   size;
-    SBSprite *sprite;
+@interface SBEntity : NSObject <SBRenderable, SBMovable> {
+    GLKVector2  position;
+    CGSize      size;
+    SBSprite    *sprite;
+    float       max_velocity;
 }
 
--(id) initWithFile:(NSString *)filePath andPosition:(CGPoint)pos andSize:(CGSize)s;
-
+-(id) initWithFile:(NSString *)filePath andPosition:(GLKVector2)p andSize:(CGSize)s;
 
 @end
