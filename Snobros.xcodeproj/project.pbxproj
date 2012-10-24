@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		136F77C9163894710090198F /* player.png in Resources */ = {isa = PBXBuildFile; fileRef = 136F77C8163894710090198F /* player.png */; };
+		136F77CC1638993F0090198F /* player.png in Resources */ = {isa = PBXBuildFile; fileRef = 136F77CB1638993F0090198F /* player.png */; };
 		878CC9D4163709970030F41A /* SBSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 878CC9D3163709970030F41A /* SBSprite.m */; };
 		878E913C163864BD002AFF73 /* snobro2.png in Resources */ = {isa = PBXBuildFile; fileRef = 878E913B163864BD002AFF73 /* snobro2.png */; };
 		87C32D45163714C1007E6579 /* snobrosmap.png in Resources */ = {isa = PBXBuildFile; fileRef = 87C32D44163714C1007E6579 /* snobrosmap.png */; };
@@ -30,7 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		136F77C8163894710090198F /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = player.png; path = ../../../desktop/player.png; sourceTree = "<group>"; };
+		136F77CB1638993F0090198F /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player.png; sourceTree = "<group>"; };
 		878CC9D2163709970030F41A /* SBSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSprite.h; sourceTree = "<group>"; };
 		878CC9D3163709970030F41A /* SBSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSprite.m; sourceTree = "<group>"; };
 		878E913B163864BD002AFF73 /* snobro2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snobro2.png; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 		87C32D42163714B6007E6579 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				136F77C8163894710090198F /* player.png */,
+				136F77CB1638993F0090198F /* player.png */,
 				878E913B163864BD002AFF73 /* snobro2.png */,
 				87C32D6716373D59007E6579 /* snobro.png */,
 				87C32D44163714C1007E6579 /* snobrosmap.png */,
@@ -213,7 +213,7 @@
 				87C32D45163714C1007E6579 /* snobrosmap.png in Resources */,
 				87C32D6816373D59007E6579 /* snobro.png in Resources */,
 				878E913C163864BD002AFF73 /* snobro2.png in Resources */,
-				136F77C9163894710090198F /* player.png in Resources */,
+				136F77CC1638993F0090198F /* player.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
