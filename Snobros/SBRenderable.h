@@ -10,5 +10,4 @@
 
 @protocol SBRenderable <NSObject>
 -(void) render;
--(void) update;
 @end
