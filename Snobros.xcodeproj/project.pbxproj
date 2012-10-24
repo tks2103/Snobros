@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		878CC9D4163709970030F41A /* SBSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 878CC9D3163709970030F41A /* SBSprite.m */; };
+		878E913C163864BD002AFF73 /* snobro2.png in Resources */ = {isa = PBXBuildFile; fileRef = 878E913B163864BD002AFF73 /* snobro2.png */; };
 		87C32D45163714C1007E6579 /* snobrosmap.png in Resources */ = {isa = PBXBuildFile; fileRef = 87C32D44163714C1007E6579 /* snobrosmap.png */; };
 		87C32D50163723F5007E6579 /* SBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C32D4F163723F5007E6579 /* SBViewController.m */; };
 		87C32D5C16372B14007E6579 /* SBEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C32D5B16372B14007E6579 /* SBEntity.m */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		878CC9D2163709970030F41A /* SBSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSprite.h; sourceTree = "<group>"; };
 		878CC9D3163709970030F41A /* SBSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSprite.m; sourceTree = "<group>"; };
+		878E913B163864BD002AFF73 /* snobro2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snobro2.png; sourceTree = "<group>"; };
 		87C32D44163714C1007E6579 /* snobrosmap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snobrosmap.png; sourceTree = "<group>"; };
 		87C32D4E163723F5007E6579 /* SBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBViewController.h; sourceTree = "<group>"; };
 		87C32D4F163723F5007E6579 /* SBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBViewController.m; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 		87C32D42163714B6007E6579 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				878E913B163864BD002AFF73 /* snobro2.png */,
 				87C32D6716373D59007E6579 /* snobro.png */,
 				87C32D44163714C1007E6579 /* snobrosmap.png */,
 			);
@@ -201,6 +204,7 @@
 				87F8F7EE1636FB9B007D4BC0 /* Default-568h@2x.png in Resources */,
 				87C32D45163714C1007E6579 /* snobrosmap.png in Resources */,
 				87C32D6816373D59007E6579 /* snobro.png in Resources */,
+				878E913C163864BD002AFF73 /* snobro2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
