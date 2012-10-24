@@ -25,6 +25,7 @@
 		87F8F7EA1636FB9B007D4BC0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 87F8F7E91636FB9B007D4BC0 /* Default.png */; };
 		87F8F7EC1636FB9B007D4BC0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 87F8F7EB1636FB9B007D4BC0 /* Default@2x.png */; };
 		87F8F7EE1636FB9B007D4BC0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 87F8F7ED1636FB9B007D4BC0 /* Default-568h@2x.png */; };
+		A3EC682416386C88003364F2 /* SBMovableEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = A3EC682316386C88003364F2 /* SBMovableEntity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,8 @@
 		87F8F7E91636FB9B007D4BC0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		87F8F7EB1636FB9B007D4BC0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		87F8F7ED1636FB9B007D4BC0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A3EC682216386C88003364F2 /* SBMovableEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBMovableEntity.h; sourceTree = "<group>"; };
+		A3EC682316386C88003364F2 /* SBMovableEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBMovableEntity.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 		87F8F7DD1636FB9B007D4BC0 /* Snobros */ = {
 			isa = PBXGroup;
 			children = (
+				A3EC682216386C88003364F2 /* SBMovableEntity.h */,
+				A3EC682316386C88003364F2 /* SBMovableEntity.m */,
 				87C32D42163714B6007E6579 /* Assets */,
 				87F8F7E61636FB9B007D4BC0 /* AppDelegate.h */,
 				87F8F7E71636FB9B007D4BC0 /* AppDelegate.m */,
@@ -220,6 +225,7 @@
 				878CC9D4163709970030F41A /* SBSprite.m in Sources */,
 				87C32D50163723F5007E6579 /* SBViewController.m in Sources */,
 				87C32D5C16372B14007E6579 /* SBEntity.m in Sources */,
+				A3EC682416386C88003364F2 /* SBMovableEntity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +265,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -281,7 +287,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -295,7 +301,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Snobros/Snobros-Prefix.pch";
 				INFOPLIST_FILE = "Snobros/Snobros-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -307,7 +313,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Snobros/Snobros-Prefix.pch";
 				INFOPLIST_FILE = "Snobros/Snobros-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -1,5 +1,5 @@
 //
-//  SBEntity.h
+//  SBMovableEntity.h
 //  Snobros
 //
 //  Created by Tanoy Sinha on 10/23/12.
@@ -7,13 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SBRenderable.h"
-#import "SBSprite.h"
+#import "SBMovable.h"
+#import "SBEntity.h"
 
-@interface SBEntity : NSObject <SBRenderable> {
-    GLKVector2  position;
-    CGSize      size;
-    SBSprite    *sprite;
+@interface SBMovableEntity : SBEntity <SBMovable> {
+    float max_speed;
 }
 
 -(id) initWithFile:(NSString *)filePath andPosition:(GLKVector2)p andSize:(CGSize)s;

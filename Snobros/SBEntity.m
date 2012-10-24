@@ -20,20 +20,8 @@
         sprite = [[SBSprite alloc] initWithFile:filePath andPosition:p andSize:s];
         position = p;
         size = s;
-        max_velocity = 10;
     }
     return self;
-}
-
--(void) moveTo:(GLKVector2)p {
-    position = p;
-    [sprite moveTo:p withSize:size];
-}
-
--(void) walkWithHeading:(GLKVector2)h withElapsedTime:(NSTimeInterval)e {
-    float magnitude = e * max_velocity;
-    GLKVector2 displacement = GLKVector2MultiplyScalar(GLKVector2Normalize(h), magnitude);
-    [self moveTo:GLKVector2Add(position, displacement)];
 }
 
 @end

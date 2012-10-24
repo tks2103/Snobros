@@ -32,7 +32,7 @@
     glClearColor(0.7, 0.7, 0.4, 0.4);
     
     map = [[SBEntity alloc] initWithFile:@"snobrosmap.png" andPosition:GLKVector2Make(0, 0) andSize:CGSizeMake(480, 320)];
-    bro = [[SBEntity alloc] initWithFile:@"snobro2.png"  andPosition:GLKVector2Make(0, 0) andSize:CGSizeMake(76, 95)];
+    bro = [[SBMovableEntity alloc] initWithFile:@"snobro2.png"  andPosition:GLKVector2Make(0, 0) andSize:CGSizeMake(76, 95)];
     
     return YES;
 }
