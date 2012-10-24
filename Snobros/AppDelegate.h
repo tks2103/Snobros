@@ -10,11 +10,12 @@
 #import <GLKit/GLKit.h>
 #import "SBViewController.h"
 #import "SBEntity.h"
+#import "SBMovableEntity.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, GLKViewControllerDelegate, GLKViewDelegate> {
-    SBEntity    *map;
-    SBEntity    *bro;
-    NSDate      *lastUpdate;
+    SBEntity           *map;
+    SBMovableEntity    *bro;
+    NSDate             *lastUpdate;
 }
 
 @property (strong, nonatomic) UIWindow *window;
