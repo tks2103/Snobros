@@ -31,20 +31,26 @@
     
     glClearColor(0.7, 0.7, 0.4, 0.4);
     
-    map = [[SBMap alloc] initWithFile:@"snobrosmap.png"];
+    map = [[SBEntity alloc] initWithFile:@"snobrosmap.png" andPosition:GLKVector2Make(0, 0) andSize:CGSizeMake(480, 320)];
+    bro = [[SBEntity alloc] initWithFile:@"snobro.png"  andPosition:GLKVector2Make(0, 0) andSize:CGSizeMake(30, 42)];
     
     return YES;
 }
 
 - (void)glkViewControllerUpdate:(GLKViewController *)controller
 {
-    //glClearColor(arc4random()%10/10.0, arc4random()%10/10.0, arc4random()%10/10.0, 1);
+    NSTimeInterval timeElapsed = -[lastUpdate timeIntervalSinceNow];
+    
+    [bro walkWithHeading:GLKVector2Make(-1, 0) withElapsedTime:timeElapsed];
+    
+    lastUpdate = [NSDate date];
 }
 
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect
 {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     [map render];
+    [bro render];
 }
 
 

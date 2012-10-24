@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <GLKit/GLKit.h>
-#import "SBMap.h"
 #import "SBViewController.h"
+#import "SBEntity.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, GLKViewControllerDelegate, GLKViewDelegate> {
-    SBMap *map;
+    SBEntity    *map;
+    SBEntity    *bro;
+    NSDate      *lastUpdate;
 }
 
 @property (strong, nonatomic) UIWindow *window;
