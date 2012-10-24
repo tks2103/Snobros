@@ -38,24 +38,24 @@
 
 
 -(void) calculatePosition:(GLKVector2)p withSize:(CGSize)s {
-    positionCoords[0] = GLKVector2Make(p.x + s.width/2, p.y - s.height/2);
-    positionCoords[1] = GLKVector2Make(p.x + s.width/2, p.y + s.height/2);
-    positionCoords[2] = GLKVector2Make(p.x - s.width/2, p.y + s.height/2);
-    positionCoords[3] = GLKVector2Make(p.x - s.width/2, p.y - s.height/2);
+    positionCoords[0] = GLKVector2Make(p.x, p.y + s.height);
+    positionCoords[1] = GLKVector2Make(p.x, p.y);
+    positionCoords[2] = GLKVector2Make(p.x + s.width, p.y);
+    positionCoords[3] = GLKVector2Make(p.x + s.width, p.y + s.height);
 }
 
 -(void) calculateTexture {
-    textureCoords[0] = GLKVector2Make(1, 1);
-    textureCoords[1] = GLKVector2Make(1, 0);
-    textureCoords[2] = GLKVector2Make(0, 0);
-    textureCoords[3] = GLKVector2Make(0, 1);
+    textureCoords[0] = GLKVector2Make(0, 1); // ?
+    textureCoords[1] = GLKVector2Make(0, 0); // bottom left
+    textureCoords[2] = GLKVector2Make(1, 0); // ?
+    textureCoords[3] = GLKVector2Make(1, 1); // top right
 }
 
 -(void) render {
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
     
-    effect.transform.projectionMatrix = GLKMatrix4MakeOrtho(-240, 240, -160, 160, -1, 1);
+    effect.transform.projectionMatrix = GLKMatrix4MakeOrtho(0, 480, 320, 0, -1, 1);
     
     effect.texture2d0.envMode = GLKTextureEnvModeReplace;
     effect.texture2d0.target = GLKTextureTarget2D;
