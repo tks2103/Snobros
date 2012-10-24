@@ -15,15 +15,16 @@
 -(id) initWithFile:(NSString *)filePath andPosition:(GLKVector2)p andSize:(CGSize)s {
     self = [super initWithFile:filePath andPosition:p andSize:s];
     if(self) {
-      max_speed = 500;
-      target = GLKVector2Make(240, 160);
+        max_speed = 500;
+        target = position;
     }
     return self;
 }
 
 -(void) moveTo:(GLKVector2)p {
     position = p;
-    [sprite moveTo:p withSize:size];
+    GLKVector2 dest = GLKVector2Make(position.x-size.width/2, position.y-size.height/2);
+    [sprite moveTo:dest withSize:size];
 }
 
 
@@ -35,12 +36,12 @@
 
 
 -(void) updateWithElapsedTime:(NSTimeInterval)e {
-    if ([self atTargetAfter:e]) {
-        int x = arc4random()%480 - 240;
-        int y = arc4random()%320 - 160;
-        target = GLKVector2Make(x, y);
+    if (!GLKVector2AllEqualToVector2(target, position)) {
+        [self walkWithHeading:GLKVector2Subtract(target, position) withElapsedTime: e];
     }
-    [self walkWithHeading:GLKVector2Subtract(target, position) withElapsedTime: e];
+    if ([self atTargetAfter:e]) {
+        [self moveTo:target];
+    }
 }
 
 -(bool) atTargetAfter:(NSTimeInterval)e {
