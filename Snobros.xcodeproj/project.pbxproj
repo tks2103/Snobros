@@ -120,9 +120,9 @@
 		87F8F7DD1636FB9B007D4BC0 /* Snobros */ = {
 			isa = PBXGroup;
 			children = (
+				87C32D42163714B6007E6579 /* Assets */,
 				A3EC682216386C88003364F2 /* SBMovableEntity.h */,
 				A3EC682316386C88003364F2 /* SBMovableEntity.m */,
-				87C32D42163714B6007E6579 /* Assets */,
 				87F8F7E61636FB9B007D4BC0 /* AppDelegate.h */,
 				87F8F7E71636FB9B007D4BC0 /* AppDelegate.m */,
 				87C32D4E163723F5007E6579 /* SBViewController.h */,

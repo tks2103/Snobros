@@ -11,9 +11,13 @@
 #import "SBEntity.h"
 
 @interface SBMovableEntity : SBEntity <SBMovable> {
-    float max_speed;
+    float      max_speed;
+    GLKVector2 target;
 }
 
+@property GLKVector2 target;
+
 -(id) initWithFile:(NSString *)filePath andPosition:(GLKVector2)p andSize:(CGSize)s;
+-(void) updateWithElapsedTime:(NSTimeInterval)e;
 
 @end

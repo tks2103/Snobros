@@ -14,7 +14,6 @@
 {
     EAGLContext *context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
     [EAGLContext setCurrentContext:context];
-    
     glEnable(GL_DEPTH_TEST);
     
     GLKView *view = [[GLKView alloc] initWithFrame:[[UIScreen mainScreen] bounds] context:context];
@@ -34,6 +33,10 @@
     map = [[SBEntity alloc] initWithFile:@"snobrosmap.png" andPosition:GLKVector2Make(0, 0) andSize:CGSizeMake(480, 320)];
     bro = [[SBMovableEntity alloc] initWithFile:@"snobro2.png"  andPosition:GLKVector2Make(0, 0) andSize:CGSizeMake(76, 95)];
     
+    int x = arc4random()%480 - 240;
+    int y = arc4random()%320 - 160;
+    bro.target = GLKVector2Make(x, y);
+    
     return YES;
 }
 
@@ -41,7 +44,8 @@
 {
     NSTimeInterval timeElapsed = -[lastUpdate timeIntervalSinceNow];
     
-    [bro walkWithHeading:GLKVector2Make(-1, 0) withElapsedTime:timeElapsed];
+    //[bro walkWithHeading:GLKVector2Make(-1, 0) withElapsedTime:timeElapsed];
+    [bro updateWithElapsedTime:timeElapsed];
     
     lastUpdate = [NSDate date];
 }
