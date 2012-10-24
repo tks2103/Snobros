@@ -10,8 +10,7 @@
 
 @implementation AppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     EAGLContext *context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
     [EAGLContext setCurrentContext:context];
     glEnable(GL_DEPTH_TEST);
@@ -33,55 +32,55 @@
     map = [[SBEntity alloc] initWithFile:@"snobrosmap.png" andPosition:GLKVector2Make(0, 0) andSize:CGSizeMake(480, 320)];
     bro = [[SBMovableEntity alloc] initWithFile:@"snobro2.png"  andPosition:GLKVector2Make(0, 0) andSize:CGSizeMake(76, 95)];
     
-    int x = arc4random()%480 - 240;
-    int y = arc4random()%320 - 160;
-    bro.target = GLKVector2Make(x, y);
-    
     return YES;
 }
 
-- (void)glkViewControllerUpdate:(GLKViewController *)controller
-{
-    NSTimeInterval timeElapsed = -[lastUpdate timeIntervalSinceNow];
-    
-    //[bro walkWithHeading:GLKVector2Make(-1, 0) withElapsedTime:timeElapsed];
-    [bro updateWithElapsedTime:timeElapsed];
-    
-    lastUpdate = [NSDate date];
+- (void)glkViewControllerUpdate:(GLKViewController *)controller {
+    if (controller.timeSinceLastUpdate > 0.001) {
+        [bro updateWithElapsedTime:controller.timeSinceLastUpdate];
+    }
 }
 
-- (void)glkView:(GLKView *)view drawInRect:(CGRect)rect
-{
+- (void)glkView:(GLKView *)view drawInRect:(CGRect)rect {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     [map render];
     [bro render];
 }
 
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    for (UITouch *touch in touches) {
+        CGPoint pt =[touch locationInView:self.window.rootViewController.view];
+        bro.target = GLKVector2Make(pt.x, pt.y);
+    }
+}
 
-- (void)applicationWillResignActive:(UIApplication *)application
-{
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+    for (UITouch *touch in touches) {
+        CGPoint pt =[touch locationInView:self.window.rootViewController.view];
+        bro.target = GLKVector2Make(pt.x, pt.y);
+    }
+}
+
+
+- (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application
-{
+- (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
-- (void)applicationWillEnterForeground:(UIApplication *)application
-{
+- (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *)application
-{
+- (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 
-- (void)applicationWillTerminate:(UIApplication *)application
-{
+- (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
