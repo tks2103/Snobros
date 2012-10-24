@@ -30,8 +30,7 @@
 
 -(void) walkWithHeading:(GLKVector2)h withElapsedTime:(NSTimeInterval)e {
     float magnitude = e * max_speed;
-    h = GLKVector2Normalize(h);
-    GLKVector2 displacement = GLKVector2MultiplyScalar(h, magnitude);
+    GLKVector2 displacement = GLKVector2MultiplyScalar(GLKVector2Normalize(h), magnitude);
     [self moveTo:GLKVector2Add(position, displacement)];
 }
 
