@@ -1,5 +1,5 @@
 //
-//  SBMovable.h
+//  Renderable.h
 //  Snobros
 //
 //  Created by Tanoy Sinha on 10/23/12.
@@ -7,10 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <GLKit/GLKit.h>
 
-@protocol SBMovable <NSObject>
+@protocol Renderable<NSObject>
 
-- (void) teleportTo:(GLKVector2)p;
+- (void) render;
 
 @end

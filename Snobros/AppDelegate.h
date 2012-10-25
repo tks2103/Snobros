@@ -8,14 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <GLKit/GLKit.h>
-#import "SBViewController.h"
-#import "SBEntity.h"
-#import "SBMovableEntity.h"
+#import "ViewController.h"
+#import "Entity.h"
+#import "MovableEntity.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate, GLKViewControllerDelegate, GLKViewDelegate> {
-    SBEntity           *map;
-    SBMovableEntity    *bro;
-    NSDate             *lastUpdate;
+@interface AppDelegate : UIResponder<UIApplicationDelegate, GLKViewControllerDelegate, GLKViewDelegate> {
+  Entity        *map_;
+  MovableEntity *bro_;
 }
 
 @property (strong, nonatomic) UIWindow *window;
