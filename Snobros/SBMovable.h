@@ -10,6 +10,7 @@
 #import <GLKit/GLKit.h>
 
 @protocol SBMovable <NSObject>
--(void) moveTo:(GLKVector2)p;
--(void) walkWithHeading:(GLKVector2)h withElapsedTime:(NSTimeInterval)e;
+
+- (void) teleportTo:(GLKVector2)p;
+
 @end

@@ -12,40 +12,53 @@
 
 @synthesize target;
 
--(id) initWithFile:(NSString *)filePath andPosition:(GLKVector2)p andSize:(CGSize)s {
+
+- (id) initWithFile:(NSString *)filePath
+        andPosition:(GLKVector2)p
+            andSize:(CGSize)s {
     self = [super initWithFile:filePath andPosition:p andSize:s];
     if(self) {
-        max_speed = 500;
-        target = position;
+        maxSpeed = 500;
+        velocity  = GLKVector2Make(0, 0);
+        target    = position;
     }
     return self;
 }
 
--(void) moveTo:(GLKVector2)p {
+
+- (void) teleportTo:(GLKVector2)p {
     position = p;
-    GLKVector2 dest = GLKVector2Make(position.x-size.width/2, position.y-size.height/2);
+    GLKVector2 dest = GLKVector2Make(position.x-size.width/2,
+                                     position.y-size.height/2);
     [sprite moveTo:dest withSize:size];
 }
 
 
--(void) walkWithHeading:(GLKVector2)h withElapsedTime:(NSTimeInterval)e {
-    float magnitude = e * max_speed;
-    GLKVector2 displacement = GLKVector2MultiplyScalar(GLKVector2Normalize(h), magnitude);
-    [self moveTo:GLKVector2Add(position, displacement)];
+- (void) walkTo:(GLKVector2)point {
+    GLKVector2 direction;
+    target    = point;
+    direction = GLKVector2Normalize(GLKVector2Subtract(target, position));
+    velocity  = GLKVector2MultiplyScalar(direction, maxSpeed);
 }
 
 
--(void) updateWithElapsedTime:(NSTimeInterval)e {
-    if (!GLKVector2AllEqualToVector2(target, position)) {
-        [self walkWithHeading:GLKVector2Subtract(target, position) withElapsedTime: e];
+- (void) updateWithElapsedTime:(NSTimeInterval)e {
+    GLKVector2 distance = GLKVector2MultiplyScalar(velocity, e);
+
+    if (GLKVector2Length(distance) > 0) {
+        [self teleportTo:GLKVector2Add(position, distance)];
     }
+
     if ([self atTargetAfter:e]) {
-        [self moveTo:target];
+        velocity = GLKVector2Make(0, 0);
+        [self teleportTo:target];
     }
 }
 
--(bool) atTargetAfter:(NSTimeInterval)e {
-    return GLKVector2Length(GLKVector2Subtract(target, position)) < (e * max_speed);
+
+- (bool) atTargetAfter:(NSTimeInterval)e {
+    GLKVector2 distance = GLKVector2Subtract(target, position);
+    return GLKVector2Length(distance) < (e * maxSpeed);
 }
 
 @end

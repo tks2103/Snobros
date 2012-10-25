@@ -50,14 +50,14 @@
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     for (UITouch *touch in touches) {
         CGPoint pt =[touch locationInView:self.window.rootViewController.view];
-        bro.target = GLKVector2Make(pt.x, pt.y);
+        [bro walkTo:GLKVector2Make(pt.x, pt.y)];
     }
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
     for (UITouch *touch in touches) {
         CGPoint pt =[touch locationInView:self.window.rootViewController.view];
-        bro.target = GLKVector2Make(pt.x, pt.y);
+        [bro walkTo:GLKVector2Make(pt.x, pt.y)];
     }
 }
 
