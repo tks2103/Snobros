@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		136F77CC1638993F0090198F /* player.png in Resources */ = {isa = PBXBuildFile; fileRef = 136F77CB1638993F0090198F /* player.png */; };
-		878CC9D4163709970030F41A /* SBSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 878CC9D3163709970030F41A /* SBSprite.m */; };
+		878CC9D4163709970030F41A /* Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 878CC9D3163709970030F41A /* Sprite.m */; };
 		878E913C163864BD002AFF73 /* snobro2.png in Resources */ = {isa = PBXBuildFile; fileRef = 878E913B163864BD002AFF73 /* snobro2.png */; };
 		87C32D45163714C1007E6579 /* snobrosmap.png in Resources */ = {isa = PBXBuildFile; fileRef = 87C32D44163714C1007E6579 /* snobrosmap.png */; };
-		87C32D50163723F5007E6579 /* SBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C32D4F163723F5007E6579 /* SBViewController.m */; };
-		87C32D5C16372B14007E6579 /* SBEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C32D5B16372B14007E6579 /* SBEntity.m */; };
+		87C32D50163723F5007E6579 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C32D4F163723F5007E6579 /* ViewController.m */; };
+		87C32D5C16372B14007E6579 /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C32D5B16372B14007E6579 /* Entity.m */; };
 		87C32D6816373D59007E6579 /* snobro.png in Resources */ = {isa = PBXBuildFile; fileRef = 87C32D6716373D59007E6579 /* snobro.png */; };
 		87E39F3E1636FCFE003438CF /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E39F3D1636FCFE003438CF /* OpenGLES.framework */; };
 		87E39F401636FD04003438CF /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E39F3F1636FD04003438CF /* GLKit.framework */; };
@@ -26,25 +26,25 @@
 		87F8F7EA1636FB9B007D4BC0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 87F8F7E91636FB9B007D4BC0 /* Default.png */; };
 		87F8F7EC1636FB9B007D4BC0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 87F8F7EB1636FB9B007D4BC0 /* Default@2x.png */; };
 		87F8F7EE1636FB9B007D4BC0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 87F8F7ED1636FB9B007D4BC0 /* Default-568h@2x.png */; };
-		A3EC682416386C88003364F2 /* SBMovableEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = A3EC682316386C88003364F2 /* SBMovableEntity.m */; };
+		A3EC682416386C88003364F2 /* MovableEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = A3EC682316386C88003364F2 /* MovableEntity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		136F77CB1638993F0090198F /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player.png; sourceTree = "<group>"; };
-		878CC9D2163709970030F41A /* SBSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSprite.h; sourceTree = "<group>"; };
-		878CC9D3163709970030F41A /* SBSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSprite.m; sourceTree = "<group>"; };
+		878CC9D2163709970030F41A /* Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sprite.h; sourceTree = "<group>"; };
+		878CC9D3163709970030F41A /* Sprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sprite.m; sourceTree = "<group>"; };
 		878E913B163864BD002AFF73 /* snobro2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snobro2.png; sourceTree = "<group>"; };
 		87C32D44163714C1007E6579 /* snobrosmap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snobrosmap.png; sourceTree = "<group>"; };
-		87C32D4E163723F5007E6579 /* SBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBViewController.h; sourceTree = "<group>"; };
-		87C32D4F163723F5007E6579 /* SBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBViewController.m; sourceTree = "<group>"; };
-		87C32D5A16372B14007E6579 /* SBEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBEntity.h; sourceTree = "<group>"; };
-		87C32D5B16372B14007E6579 /* SBEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBEntity.m; sourceTree = "<group>"; };
-		87C32D66163736B0007E6579 /* SBMovable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBMovable.h; sourceTree = "<group>"; };
+		87C32D4E163723F5007E6579 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		87C32D4F163723F5007E6579 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		87C32D5A16372B14007E6579 /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
+		87C32D5B16372B14007E6579 /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entity.m; sourceTree = "<group>"; };
+		87C32D66163736B0007E6579 /* Movable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Movable.h; sourceTree = "<group>"; };
 		87C32D6716373D59007E6579 /* snobro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snobro.png; sourceTree = "<group>"; };
 		87E39F3D1636FCFE003438CF /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		87E39F3F1636FD04003438CF /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		87E39F411636FD21003438CF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		87E39F4A1637077C003438CF /* SBRenderable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBRenderable.h; sourceTree = "<group>"; };
+		87E39F4A1637077C003438CF /* Renderable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Renderable.h; sourceTree = "<group>"; };
 		87F8F7D31636FB9B007D4BC0 /* Snobros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snobros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F8F7D71636FB9B007D4BC0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		87F8F7D91636FB9B007D4BC0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,8 +58,8 @@
 		87F8F7E91636FB9B007D4BC0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		87F8F7EB1636FB9B007D4BC0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		87F8F7ED1636FB9B007D4BC0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		A3EC682216386C88003364F2 /* SBMovableEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBMovableEntity.h; sourceTree = "<group>"; };
-		A3EC682316386C88003364F2 /* SBMovableEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBMovableEntity.m; sourceTree = "<group>"; };
+		A3EC682216386C88003364F2 /* MovableEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovableEntity.h; sourceTree = "<group>"; };
+		A3EC682316386C88003364F2 /* MovableEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovableEntity.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,18 +124,18 @@
 			isa = PBXGroup;
 			children = (
 				87C32D42163714B6007E6579 /* Assets */,
-				A3EC682216386C88003364F2 /* SBMovableEntity.h */,
-				A3EC682316386C88003364F2 /* SBMovableEntity.m */,
+				A3EC682216386C88003364F2 /* MovableEntity.h */,
+				A3EC682316386C88003364F2 /* MovableEntity.m */,
 				87F8F7E61636FB9B007D4BC0 /* AppDelegate.h */,
 				87F8F7E71636FB9B007D4BC0 /* AppDelegate.m */,
-				87C32D4E163723F5007E6579 /* SBViewController.h */,
-				87C32D4F163723F5007E6579 /* SBViewController.m */,
-				87E39F4A1637077C003438CF /* SBRenderable.h */,
-				87C32D66163736B0007E6579 /* SBMovable.h */,
-				87C32D5A16372B14007E6579 /* SBEntity.h */,
-				87C32D5B16372B14007E6579 /* SBEntity.m */,
-				878CC9D2163709970030F41A /* SBSprite.h */,
-				878CC9D3163709970030F41A /* SBSprite.m */,
+				87C32D4E163723F5007E6579 /* ViewController.h */,
+				87C32D4F163723F5007E6579 /* ViewController.m */,
+				87E39F4A1637077C003438CF /* Renderable.h */,
+				87C32D66163736B0007E6579 /* Movable.h */,
+				87C32D5A16372B14007E6579 /* Entity.h */,
+				87C32D5B16372B14007E6579 /* Entity.m */,
+				878CC9D2163709970030F41A /* Sprite.h */,
+				878CC9D3163709970030F41A /* Sprite.m */,
 				87F8F7DE1636FB9B007D4BC0 /* Supporting Files */,
 			);
 			path = Snobros;
@@ -226,10 +226,10 @@
 			files = (
 				87F8F7E41636FB9B007D4BC0 /* main.m in Sources */,
 				87F8F7E81636FB9B007D4BC0 /* AppDelegate.m in Sources */,
-				878CC9D4163709970030F41A /* SBSprite.m in Sources */,
-				87C32D50163723F5007E6579 /* SBViewController.m in Sources */,
-				87C32D5C16372B14007E6579 /* SBEntity.m in Sources */,
-				A3EC682416386C88003364F2 /* SBMovableEntity.m in Sources */,
+				878CC9D4163709970030F41A /* Sprite.m in Sources */,
+				87C32D50163723F5007E6579 /* ViewController.m in Sources */,
+				87C32D5C16372B14007E6579 /* Entity.m in Sources */,
+				A3EC682416386C88003364F2 /* MovableEntity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
